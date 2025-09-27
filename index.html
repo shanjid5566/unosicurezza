@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- FontAwsome Cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>unosicurezza</title>
+    <link rel="stylesheet" href="./src/style.css" />
+  </head>
+  <body>
+    <!-- <div id="app"></div> -->
+    <body class="bg-white text-black">
+      <header class="w-full mt-4">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="flex justify-between items-center py-4">
+            <!-- Left: Logo & Toggle -->
+            <div class="flex items-center justify-between w-full lg:w-auto">
+              <!-- Logo -->
+              <div>
+                <a href="/" class="flex items-center">
+                  <img
+                    src="/src/logo.png"
+                    alt="UnoSicurezza Logo"
+                    class="w-52"
+                  />
+                </a>
+              </div>
+
+              <!-- Mobile Menu Toggle -->
+              <div class="lg:hidden">
+                <button
+                  id="menu-toggle"
+                  class="text-gray-700 focus:outline-none"
+                >
+                  <svg
+                    class="w-6 h-6"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    viewBox="0 0 24 24"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path d="M4 6h16M4 12h16M4 18h16" />
+                  </svg>
+                </button>
+              </div>
+            </div>
+
+            <!-- Desktop Navigation -->
+            <div class="hidden lg:flex lg:items-center lg:gap-8 pt-2">
+              <nav
+                class="flex items-center md:gap-6 gap-10 font-medium xl:text-lg"
+              >
+                <a href="#" class="hover:text-teal-500 xl:text-lg">Home</a>
+                <a href="#">Servizi <span class="ml-1">˅</span></a>
+                <a href="#" class="hover:text-teal-500 xl:text-lg"
+                  >Formazione</a
+                >
+                <a href="#" class="hover:text-teal-500 xl:text-lg">Chi siamo</a>
+                <a href="#" class="hover:text-teal-500 xl:text-lg"
+                  >Collabora con noi</a
+                >
+                <a href="#" class="hover:text-teal-500 xl:text-lg"
+                  >Contattaci</a
+                >
+              </nav>
+            </div>
+
+            <!-- Desktop: E-Learning Button -->
+            <div class="hidden lg:block">
+              <a
+                href="#"
+                class="ml-4 px-4 py-2 bg-teal-400 text-white rounded-full hover:bg-teal-500 transition"
+              >
+                E-Learning
+              </a>
+            </div>
+          </div>
+
+          <!-- Mobile Menu -->
+          <div
+            id="mobile-menu"
+            class="lg:hidden flex flex-col gap-4 mt-4 w-full bg-white border-t text-sm font-medium max-h-0 overflow-hidden py-0 transition-all duration-300"
+          >
+            <a href="#" class="px-4 text-teal-500">Home</a>
+            <a href="#" class="px-4">Servizi</a>
+            <a href="#" class="px-4">Formazione</a>
+            <a href="#" class="px-4">Chi siamo</a>
+            <a href="#" class="px-4">Collabora con noi</a>
+            <a href="#" class="px-4">Contattaci</a>
+            <a
+              href="#"
+              class="mt-2 mx-4 px-4 py-2 text-center bg-teal-400 text-white rounded-full hover:bg-teal-500 transition"
+            >
+              E-Learning
+            </a>
+          </div>
+        </div>
+      </header>
+
+      <script>
+        const menuToggle = document.getElementById("menu-toggle");
+        const mobileMenu = document.getElementById("mobile-menu");
+        // Toggle menu on button click
+        menuToggle.addEventListener("click", () => {
+          if (mobileMenu.classList.contains("max-h-0")) {
+            mobileMenu.classList.remove("max-h-0", "py-0");
+            mobileMenu.classList.add("max-h-[500px]", "py-4");
+          } else {
+            mobileMenu.classList.add("max-h-0", "py-0");
+            mobileMenu.classList.remove("max-h-[500px]", "py-4");
+          }
+        });
+        // Close menu when clicking outside
+        window.addEventListener("click", (e) => {
+          if (
+            !mobileMenu.contains(e.target) &&
+            !menuToggle.contains(e.target)
+          ) {
+            mobileMenu.classList.add("max-h-0", "py-0");
+            mobileMenu.classList.remove("max-h-[500px]", "py-4");
+          }
+        });
+      </script>
+    </body>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
