@@ -442,16 +442,20 @@
       <section class="relative">
         <!-- Background Right Section -->
         <div
-          class="lg:w-2/7 xl:w-2/7  absolute right-0 top-0 h-[570px] bg-[#73BFA1] -z-10 "
+          class="lg:w-2/7 xl:w-3/9 absolute right-0 top-0 h-[570px] bg-[#73BFA1] -z-10"
         ></div>
 
         <div class="max-w-7xl mx-auto px-6 py-8">
-          <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 shadow-2xl lg:shadow-none py-6">
+          <div
+            class="grid grid-cols-1 lg:grid-cols-2 gap-8 shadow-2xl lg:shadow-none py-6"
+          >
             <!-- Left Section (Form) -->
             <div
               class="flex flex-col justify-center w-full max-w-[525px] mx-auto lg:mx-0 text-center lg:text-left"
             >
-              <h2 class="text-2xl font-bold text-gray-900 mb-4 text-left">
+              <h2
+                class="text-2xl font-bold text-gray-900 mb-4 text-left ml-2 md:ml-0"
+              >
                 Condividi la tua recensione con noi
               </h2>
               <p class="text-sm text-gray-500 mb-6">
@@ -463,7 +467,7 @@
               <input
                 type="text"
                 placeholder="Nome *"
-                class="w-full border border-gray-300 rounded-md px-4 py-2 mb-6 focus:outline-none focus:ring-2 focus:ring-green-400"
+                class="w-4/5 lg:w-full max-w-[525px] mx-auto lg:mx-0 border border-gray-300 rounded-md px-4 py-2 mb-6 focus:outline-none focus:ring-2 focus:ring-green-400"
               />
 
               <!-- Feedback Section -->
@@ -481,26 +485,23 @@
                 <div class="flex text-yellow-400 text-xl">★★★★☆</div>
                 <span class="text-gray-600 text-sm">4/5 stars</span>
               </div>
-
               <!-- Comment Box -->
               <textarea
                 placeholder="Lascia un commento"
-                class="w-full border border-gray-300 rounded-md px-4 py-2 mb-6 focus:outline-none focus:ring-2 focus:ring-green-400 h-24 resize-none"
+                class="w-4/5 lg:w-full max-w-[525px] mx-auto lg:mx-0 border border-gray-300 rounded-md px-4 py-2 mb-6 focus:outline-none focus:ring-2 focus:ring-green-400 h-24 resize-none"
               ></textarea>
 
               <!-- Submit Button -->
               <button
-                class="w-full bg-green-400 hover:bg-green-500 text-white font-semibold py-3 rounded-full transition"
+                class="w-4/5 lg:w-full max-w-[525px] mx-auto lg:mx-0 bg-green-400 hover:bg-green-500 text-white font-semibold py-3 rounded-full transition"
               >
                 Invia
               </button>
             </div>
 
             <!-- Right Section (Map) -->
-            <div
-              class="w-full flex justify-center lg:justify-end mt-6 lg:mt-0"
-            >
-              <div class="w-full max-w-[525px] h-80 lg:h-auto">
+            <div class="w-full flex justify-center lg:justify-end mt-6 lg:mt-0">
+              <div class="w-full max-w-[525px] h-80 lg:h-auto p-3">
                 <iframe
                   class="w-full h-full rounded-md"
                   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3952.223680552881!2d110.3670853153341!3d-7.801373979207917!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a579a8e13f2a3%3A0x2a8c1f1a2b7b35e5!2sKebon%20Kacang!5e0!3m2!1sen!2sid!4v1638354287504!5m2!1sen!2sid"
@@ -517,6 +518,120 @@
       <!-- feadback section ends here -->
     </main>
     <!-- Main Section Ends Here -->
+
+    <!-- Footer section starts here -->
+
+    <footer class="bg-[#0E1525] text-gray-300 py-12 mt-20">
+      <div class="max-w-7xl mx-auto px-6">
+        <div class="grid grid-cols-1 md:grid-cols-5 gap-8">
+          <!-- Logo & Copyright -->
+          <div class="col-span-1 flex flex-col items-center md:items-start">
+            <!-- Logo -->
+            <div>
+              <a href="/" class="flex items-center">
+                <img
+                  src="/src/assets/footer-logo.png"
+                  alt="UnoSicurezza Logo"
+                  class="w-52"
+                />
+              </a>
+            </div>
+          </div>
+
+          <!-- Prodotto -->
+          <div>
+            <h4 class="text-white font-semibold mb-4">Prodotto</h4>
+            <ul class="space-y-2 text-sm">
+              <li><a href="#" class="hover:text-white">Panoramica</a></li>
+              <li><a href="#" class="hover:text-white">Caratteristiche</a></li>
+              <li><a href="#" class="hover:text-white">Soluzioni</a></li>
+              <li><a href="#" class="hover:text-white">Esercitazione</a></li>
+              <li><a href="#" class="hover:text-white">Prezzi</a></li>
+            </ul>
+          </div>
+
+          <!-- Azienda -->
+          <div>
+            <h4 class="text-white font-semibold mb-4">Azienda</h4>
+            <ul class="space-y-2 text-sm">
+              <li><a href="#" class="hover:text-white">Chi siamo</a></li>
+              <li><a href="#" class="hover:text-white">Corso</a></li>
+              <li><a href="#" class="hover:text-white">Notizia</a></li>
+            </ul>
+          </div>
+
+          <!-- Sociale -->
+          <div>
+            <h4 class="text-white font-semibold mb-4">Sociale</h4>
+            <ul class="space-y-2 text-sm">
+              <li><a href="#" class="hover:text-white">Twitter</a></li>
+              <li><a href="#" class="hover:text-white">LinkedIn</a></li>
+              <li><a href="#" class="hover:text-white">Facebook</a></li>
+              <li><a href="#" class="hover:text-white">Instagram</a></li>
+            </ul>
+          </div>
+
+          <!-- Legale + App -->
+          <div>
+            <h4 class="text-white font-semibold mb-4">Legale</h4>
+            <ul class="space-y-2 text-sm mb-6">
+              <li><a href="#" class="hover:text-white">Termini</a></li>
+              <li><a href="#" class="hover:text-white">Privacy</a></li>
+              <li><a href="#" class="hover:text-white">Biscotti</a></li>
+              <li><a href="#" class="hover:text-white">Contatto</a></li>
+            </ul>
+          </div>
+        </div>
+        <div
+          class="flex flex-col md:flex-row items-center justify-between gap-4"
+        >
+          <p class="text-sm text-gray-400 text-center md:text-left">
+            © 2022 UnoSicurezza. All rights reserved.
+          </p>
+          <div class="flex space-x-3 justify-center md:justify-end">
+            <a href="#">
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg"
+                alt="Google Play"
+                class="h-10"
+              />
+            </a>
+            <a href="#">
+              <img
+                src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg"
+                alt="App Store"
+                class="h-10"
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- <footer class="bg-[#0E1525] text-gray-300 py-4">
+  <div class="flex flex-col md:flex-row items-center justify-between gap-4">
+    <p class="text-sm text-gray-400 text-center md:text-left">
+      © 2022 UnoSicurezza. All rights reserved.
+    </p>
+    <div class="flex space-x-3 justify-center md:justify-end">
+      <a href="#">
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg"
+          alt="Google Play"
+          class="h-10"
+        />
+      </a>
+      <a href="#">
+        <img
+          src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg"
+          alt="App Store"
+          class="h-10"
+        />
+      </a>
+    </div>
+  </div>
+</footer> -->
+
+    <!-- Footer section ends here -->
 
     <script type="module" src="/src/main.js"></script>
   </body>
