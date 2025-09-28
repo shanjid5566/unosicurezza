@@ -113,19 +113,23 @@
     <main>
       <!-- banner Section Starts Here -->
 
-      <section class="bg-[#F9FDFB] py-16">
+      <section
+        class="bg-[#F9FDFB] py-10 md:py-20 bg-gradient-to-r from-[#ecf1ef] via-white to-white"
+      >
         <div
           class="max-w-7xl mx-auto px-6 flex flex-col lg:flex-row items-center gap-12"
         >
-          <!-- Left  -->
+          <!-- Left Content -->
           <div class="flex-1 text-center lg:text-left">
-            <h1 class="text-4xl md:text-5xl font-extrabold text-gray-900 mb-6">
+            <h1 class="text-4xl md:text-7xl font-extrabold text-gray-900 mb-6">
               UnoSicurezza
             </h1>
-            <h2 class="text-lg md:text-xl font-semibold text-gray-800 mb-4">
+            <h2
+              class="text-lg md:text-xl lg:w-[460px] font-semibold text-gray-800 mb-4"
+            >
               Ogni nuova competenza è un passo avanti verso il successo.
             </h2>
-            <p class="text-gray-600 mb-6">
+            <p class="text-gray-600 mb-6 lg:w-[460px]">
               Essere in regola con la sicurezza significa proteggere il bene più
               prezioso: le persone che contribuiscono al successo della tua
               azienda. Affidati a noi.
@@ -138,7 +142,7 @@
             </a>
           </div>
 
-          <!-- Right -->
+          <!-- Right Content (Images) -->
           <div class="flex justify-center items-center overflow-hidden">
             <img
               src="/src/assets/Group 1690.png"
@@ -153,7 +157,7 @@
       <!-- Course Section Starts Here -->
 
       <section class="course">
-        <div class="pt-10 pb-24 px-6 max-w-7xl mx-auto">
+        <div class="pt-10 md:pb-24 px-6 max-w-7xl mx-auto">
           <h2 class="text-4xl font-semibold text-gray-900 mb-10">
             Esplora il nostro catalogo corsi
           </h2>
@@ -161,9 +165,9 @@
           <!-- Course Cards -->
           <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             <!-- Card 1 -->
-            <div class="bg-white rounded-lg shadow-sm relative">
+            <div class="bg-white rounded-lg shadow-sm relative flex flex-col">
               <div
-                class="absolute top-2 right-2 bg-gray-100 text-gray-800 text-sm px-3 py-1 rounded-full text-center text-[12px] font-medium"
+                class="absolute top-2 right-2 bg-gray-100 text-gray-800 text-sm px-3 py-1 rounded text-center text-[12px] font-medium"
               >
                 ⏱️ 08 hr 12 mins
               </div>
@@ -172,11 +176,13 @@
                 alt="Formazione SEVESO"
                 class="w-full h-58 object-cover rounded-t-lg"
               />
-              <div class="p-5">
-                <h3 class="text-lg font-bold mb-3">
+
+              <!-- Card Content -->
+              <div class="flex flex-col flex-grow p-5">
+                <h3 class="text-lg font-bold mb-3 lg:w-[280px]">
                   Formazione SEVESO – pacchetto annuale
                 </h3>
-                <p class="text-sm text-gray-600 mb-2">
+                <p class="text-sm text-gray-600 mb-2 flex-grow">
                   corso "Seveso III" si riferisce alla direttiva UE 2012/18/UE
                   sulla prevenzione degli incidenti rilevanti che comportano
                   sostanze pericolo.
@@ -189,7 +195,7 @@
                     <span class="text-gray-500 ml-2">(16,325)</span>
                   </div>
 
-                  <div class="flex items-center space-x-2 mb-4">
+                  <div class="flex items-center space-x-2 mb-3">
                     <span class="line-through text-gray-400 text-sm"
                       >180,00€</span
                     >
@@ -198,26 +204,28 @@
                     >
                   </div>
                 </div>
+              </div>
 
-                <div class="flex justify-between space-x-3">
-                  <button
-                    class="bg-[#73BFA1] text-white px-4 py-2 rounded-full text-sm hover:bg-green-600 w-32 md:w-48"
-                  >
-                    Iscriviti Ora
-                  </button>
-                  <button
-                    class="border border-gray-300 text-gray-700 px-4 py-2 rounded-full text-sm hover:bg-gray-100 w-26 md:w-30"
-                  >
-                    Dettagli
-                  </button>
-                </div>
+              <div
+                class="flex justify-between space-x-3 px-5 pt-2 pb-5 mt-auto"
+              >
+                <button
+                  class="bg-[#73BFA1] text-white px-4 py-2 rounded-full text-sm hover:bg-green-600 w-32 md:w-48"
+                >
+                  Iscriviti Ora
+                </button>
+                <button
+                  class="border border-gray-300 text-gray-700 px-4 py-2 rounded-full text-sm hover:bg-gray-100 w-26 md:w-30"
+                >
+                  Dettagli
+                </button>
               </div>
             </div>
 
             <!-- Card 2 -->
-            <div class="bg-white rounded-lg shadow-sm relative">
+            <div class="bg-white rounded-lg shadow-sm relative flex flex-col">
               <div
-                class="absolute top-2 right-2 bg-gray-100 text-gray-800 text-sm px-3 py-1 rounded-full text-center text-[12px] font-medium"
+                class="absolute top-2 right-2 bg-gray-100 text-gray-800 text-sm px-3 py-1 rounded text-center text-[12px] font-medium"
               >
                 ⏱️ 16 hr 0 mins
               </div>
@@ -226,11 +234,13 @@
                 alt="Datore di lavoro"
                 class="w-full h-58 object-cover rounded-t-lg"
               />
-              <div class="p-5">
+
+              <!-- Card Content -->
+              <div class="flex flex-col flex-grow p-5">
                 <h3 class="text-lg font-bold mb-3">
                   Datore di lavoro (Nuovo) 16 ore
                 </h3>
-                <p class="text-sm text-gray-600 mb-2">
+                <p class="text-sm text-gray-600 mb-2 flex-grow">
                   Accordo, ai sensi dell’articolo 37, comma 2, del decreto
                   legislativo 9 aprile 2008, n. 81, tra il Governo, le regioni e
                   le Province autonome di Trento e di Bolzano...
@@ -252,26 +262,26 @@
                     >
                   </div>
                 </div>
+              </div>
 
-                <div class="flex justify-between space-x-3">
-                  <button
-                    class="bg-[#73BFA1] text-white px-4 py-2 rounded-full text-sm hover:bg-green-600 w-32 md:w-48"
-                  >
-                    Iscriviti Ora
-                  </button>
-                  <button
-                    class="border border-gray-300 text-gray-700 px-4 py-2 rounded-full text-sm hover:bg-gray-100 w-26 md:w-30"
-                  >
-                    Dettagli
-                  </button>
-                </div>
+              <div class="flex justify-between space-x-3 p-5 mt-auto">
+                <button
+                  class="bg-[#73BFA1] text-white px-4 py-2 rounded-full text-sm hover:bg-green-600 w-32 md:w-48"
+                >
+                  Iscriviti Ora
+                </button>
+                <button
+                  class="border border-gray-300 text-gray-700 px-4 py-2 rounded-full text-sm hover:bg-gray-100 w-26 md:w-30"
+                >
+                  Dettagli
+                </button>
               </div>
             </div>
 
             <!-- Card 3 -->
-            <div class="bg-white rounded-lg shadow-sm relative">
+            <div class="bg-white rounded-lg shadow-sm relative flex flex-col">
               <div
-                class="absolute top-2 right-2 bg-gray-100 text-gray-800 text-sm px-3 py-1 rounded-full text-center text-[12px] font-medium"
+                class="absolute top-2 right-2 bg-gray-100 text-gray-800 text-sm px-3 py-1 rounded text-center text-[12px] font-medium"
               >
                 ⏱️ 04 hr 0 mins
               </div>
@@ -280,9 +290,11 @@
                 alt="Generale 4 ore"
                 class="w-full h-58 object-cover rounded-t-lg"
               />
-              <div class="p-5">
+
+              <!-- Card Content -->
+              <div class="flex flex-col flex-grow p-5">
                 <h3 class="text-lg font-bold mb-3">Generale 4 ore</h3>
-                <p class="text-sm text-gray-600 mb-2">
+                <p class="text-sm text-gray-600 mb-2 flex-grow">
                   Accordo, ai sensi dell’articolo 37, comma 2, del decreto
                   legislativo 9 aprile 2008, n. 81, tra il Governo, le regioni e
                   le Province autonome di Trento e di Bolzano...
@@ -304,19 +316,19 @@
                     >
                   </div>
                 </div>
+              </div>
 
-                <div class="flex justify-between space-x-3">
-                  <button
-                    class="bg-[#73BFA1] text-white px-4 py-2 rounded-full text-sm hover:bg-green-600 w-32 md:w-48"
-                  >
-                    Iscriviti Ora
-                  </button>
-                  <button
-                    class="border border-gray-300 text-gray-700 px-4 py-2 rounded-full text-sm hover:bg-gray-100 w-26 md:w-30"
-                  >
-                    Dettagli
-                  </button>
-                </div>
+              <div class="flex justify-between space-x-3 p-5 mt-auto">
+                <button
+                  class="bg-[#73BFA1] text-white px-4 py-2 rounded-full text-sm hover:bg-green-600 w-32 md:w-48"
+                >
+                  Iscriviti Ora
+                </button>
+                <button
+                  class="border border-gray-300 text-gray-700 px-4 py-2 rounded-full text-sm hover:bg-gray-100 w-26 md:w-30"
+                >
+                  Dettagli
+                </button>
               </div>
             </div>
           </div>
@@ -602,26 +614,29 @@
           </div>
         </div>
         <div
-          class="flex flex-col md:flex-row items-center justify-between gap-4"
+          class="flex flex-col md:flex-row items-center justify-between gap-4 mt-8"
         >
           <p class="text-sm text-gray-400 text-center md:text-left">
             © 2022 UnoSicurezza. All rights reserved.
           </p>
-          <div class="flex space-x-3 justify-center md:justify-end">
-            <a href="#">
-              <img
-                src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg"
-                alt="Google Play"
-                class="h-10"
-              />
-            </a>
-            <a href="#">
-              <img
-                src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg"
-                alt="App Store"
-                class="h-10"
-              />
-            </a>
+          <div class="flex space-x-3 flex-col justify-center md:justify-end gap-3">
+            <p>Download App</p>
+            <div class="flex ">
+              <a href="#">
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg"
+                  alt="Google Play"
+                  class="h-10"
+                />
+              </a>
+              <a href="#">
+                <img
+                  src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg"
+                  alt="App Store"
+                  class="h-10"
+                />
+              </a>
+            </div>
           </div>
         </div>
       </div>
